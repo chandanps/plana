@@ -1,7 +1,7 @@
 # PlanA Assignment
 
-UI Tests - > Cypress
-API Tests - > pactumjs
+* UI Tests - > Cypress
+* API Tests - > pactumjs
 
 ## Getting Started
 
