@@ -8,7 +8,7 @@ const login = new Login();
 const store = new Store();
 const profile = new Profile();
 
-describe('Add Books to Collection', () => {
+describe('Delete Books from Collection', () => {
 
   before(() => {
     cy.visit('https://demoqa.com/books');
@@ -16,7 +16,7 @@ describe('Add Books to Collection', () => {
     login.loginWithValidCredentials();
   });
 
-  it('Should be able to add book to collection', () => {
+  it('Should be able to delete book from collection', () => {
     store.searchOreillyMedia();
     store.clickProfileMenu();
     profile.deleteAllSavedBooks();
