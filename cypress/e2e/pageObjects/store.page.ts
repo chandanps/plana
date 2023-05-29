@@ -5,8 +5,8 @@ export class Store  {
   fourthBookName(){ return cy.get("div:nth-of-type(4) > div[role='row'] > div:nth-of-type(2)").first(); }
   fourthAuthorName(){ return cy.get("div:nth-of-type(4) > div[role='row'] > div:nth-of-type(3)").first(); }
   fourthPublisherName(){ return cy.get("div:nth-of-type(4) > div[role='row'] > div:nth-of-type(4)").first(); }
-  addToYourCollectionButton(){ return cy.get('button[id="addNewRecordButton"]').first(); }
-  profileMenu(){ return cy.get('#item-3').first(); }
+  addToYourCollectionButton(){ return cy.get('.fullButton.text-right > button#addNewRecordButton').first(); }
+  profileMenu(){ return cy.get('.collapse.element-list.show > .menu-list > li:nth-of-type(3) > .text').first(); }
 
   searchOreillyMedia() {
     this.searchTextbox().type("O'Reilly Media");
@@ -22,18 +22,6 @@ export class Store  {
 
   clickProfileMenu() {
     this.profileMenu().click();
-  }
-
-  getBookName() {
-    return this.fourthBookName().invoke('text');
-  }
-
-  getAuthorName() {
-    return this.fourthAuthorName().invoke('text');
-  }
-
-  getPublisherName() {
-    return this.fourthPublisherName().invoke('text');
   }
 
   addFourthBookToCollection() {
