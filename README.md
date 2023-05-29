@@ -24,7 +24,7 @@ pnpm install
 pnpm cypress open
 ```
 * To run API Tests
-default timeout is set to 50000ms because of slow api respose
+* default timeout is set to 50000ms because of slow api respose
 ```
 pnpm api-tests
 ```
