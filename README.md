@@ -13,8 +13,19 @@ Make sure below mentioned are installed
 [pnpm](https://pnpm.io/installation)
 ```
 
-* On first clone, execute below command
+* I have used url directly in test but it can be specified in cypress config file as well like below
+```
+-- cypress.config.ts
 
+e2e: {
+baseUrl: "https://demoqa.com"
+}
+
+-- spec file
+
+cy.visit('/books');
+```
+* On first clone, execute below command
 Run commands on root folder
 ```
 pnpm install
